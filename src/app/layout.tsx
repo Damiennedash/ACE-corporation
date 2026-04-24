@@ -55,21 +55,12 @@ export const metadata: Metadata = {
     title: "ACE — Conseil Data, IA & Cloud | Abidjan, Côte d'Ivoire",
     description:
       "Transformez vos données en avantage concurrentiel. ACE accompagne les PME et grands comptes dans leur transformation digitale — Data Science, IA, Cloud, Cybersécurité.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "ACE — Ahonzo Consulting Experts",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ACE — Conseil Data, IA & Cloud | Abidjan",
     description:
       "Transformez vos données en avantage concurrentiel. Data Science, IA, Cloud & Cybersécurité pour PME et grands comptes en Côte d'Ivoire.",
-    images: ["/og-image.png"],
   },
   alternates: {
     canonical: BASE_URL,
