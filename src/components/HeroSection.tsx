@@ -74,7 +74,7 @@ function AnimatedBar({ pct, duration = 1200 }: { pct: number; duration?: number 
 
 function DataVisual() {
   return (
-    <div className="relative w-full max-w-[500px] h-[460px] flex items-center justify-center mx-auto">
+    <div className="relative w-full max-w-[500px] h-[300px] sm:h-[380px] lg:h-[460px] flex items-center justify-center mx-auto">
       <div className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-[#DBEAFE] via-[#93C5FD] to-[#3B82F6] opacity-90" />
       <div className="absolute w-[420px] h-[420px] rounded-full" style={{ border: "1.5px dashed rgba(37,99,235,0.4)" }} />
 
@@ -141,7 +141,7 @@ function DataVisual() {
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#f5f4ef] pt-16 pb-20 px-6">
+    <section className="bg-[#f5f4ef] pt-16 pb-20 px-6 overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="max-w-xl">
           <p className="flex items-center gap-3 text-[10px] font-semibold tracking-[0.3em] uppercase text-[#2563EB] mb-8">
@@ -181,8 +181,10 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex justify-center lg:justify-end">
-          <DataVisual />
+        <div className="flex justify-center lg:justify-end overflow-hidden">
+          <div className="scale-[0.6] xs:scale-[0.7] sm:scale-[0.85] lg:scale-100 origin-center">
+            <DataVisual />
+          </div>
         </div>
       </div>
     </section>
